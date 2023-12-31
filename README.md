@@ -6,24 +6,35 @@ PC
 Anaconda - Python 3.7
 
 ## ALGORITHM: 
-## Step 1:
-Open the file in read mode and handle it in test mood.
+### Step 1:
+Open the Source File for Reading:
 
-## Step 2:
-Read the text using read() function.
+Use the open function with the 'r' mode to open the source file ('data_file.txt') for reading.
+Assign the file object to the variable source.
+### Step 2:
+Read Content from Source File:
 
-## Step 3:
-Split the text using space separator.We assume that words in a sentance are separted by a space character.
+Use the read method on the source file object to read the content of the source file.
+Assign the content to the variable content.
+### Step 3:
+Open the Destination File for Writing:
 
-## Step 4:
-The length of the split list should equal the numbers of words in the test file.
+Use the open function with the 'w' mode to open the destination file ('output.txt') for writing.
+Assign the file object to the variable destination.
+### Step 4:
+Write Content to Destination File:
 
-## Step 5:
-You can refine the count by cleaning the string prior to splitting or validating the words after splitting.
+Use the write method on the destination file object to write the content to the destination file.
+### Step 5:
+Print Success Message:
 
-## Step 6:
-End the program.
+If the file copy operation is successful without errors, print "File copied successfully!".
+### Step 6:
+Read and Print Copied Content:
 
+Open the destination file ('output.txt') for reading.
+Read the content from the destination file and assign it to the variable data.
+Print the copied content using print(f"Copied content:\n{data}").
 
 
 
