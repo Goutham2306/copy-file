@@ -30,22 +30,38 @@ End the program.
 ## PROGRAM:
 
 ```
-Developed by : Goutham.K
+Developed By:Goutham.K
 Register No: 212223110019
-def wordcount(filename):
-    count=0
-    with open("newfile.txt","r") as f:
-        for data in f:
-            words=data.split()
-            for word in words:
-                count+=1
-    print("Total number of words:",count)
-filename=input("Enter Filename:")
-wordcount(filename)
+try:
+    with open("myfile.txt", 'r') as source:
+        content = source.read()
+
+    with open("output.txt", 'w') as destination:
+        destination.write(content)
+
+    print("File copied successfully!")
+    
+    with open("output.txt",'r') as fp:
+        data = fp.read()
+        
+    print(f"Copied content:\n{data}")
+
+except FileNotFoundError:
+    print("One or both files not found.")
+except Exception as e:
+    print(f"An error occurred: {str(e)}")
 ```
 
 ### OUTPUT:
-![image](https://github.com/Goutham2306/copy-file/assets/138971154/17b518b8-ba25-48d8-b3e3-dedb48c0f173)
+![image](https://github.com/Goutham2306/copy-file/assets/138971154/1cbaa31a-bd65-4e82-be6a-d8e3b567c56e)
+
+
+
+![image](https://github.com/Goutham2306/copy-file/assets/138971154/e9a3d685-23c1-4480-8fbf-c990b8be310f)
+
+
+
+![image](https://github.com/Goutham2306/copy-file/assets/138971154/8a3c8f08-a65a-49a3-9421-d44eefb198c8)
 
 
 
