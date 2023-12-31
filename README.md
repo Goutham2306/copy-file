@@ -19,7 +19,24 @@ Anaconda - Python 3.7
 
 ## PROGRAM:
 
+```
+Developed by : Goutham.K
+Register No: 212223110019
+def wordcount(filename):
+    count=0
+    with open("newfile.txt","r") as f:
+        for data in f:
+            words=data.split()
+            for word in words:
+                count+=1
+    print("Total number of words:",count)
+filename=input("Enter Filename:")
+wordcount(filename)
+```
+
 ### OUTPUT:
+![image](https://github.com/Goutham2306/copy-file/assets/138971154/17b518b8-ba25-48d8-b3e3-dedb48c0f173)
+
 
 
 
